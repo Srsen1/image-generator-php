@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  php:
+    build:
+      context: ../
+      dockerfile: ./.docker/php/dockerfile
+    ports:
+      - "80:80"
+      - "433:433"
+    env_file:
+      - .env
