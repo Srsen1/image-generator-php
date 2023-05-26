@@ -200,5 +200,5 @@ $img1 = new ImageGenerathor(
     'Roboto-Medium', 
 );
 
-#header('Content-Type: image/jpeg');
+header('Content-Type: image/jpeg');
 imagejpeg($img1->get_image());
