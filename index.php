@@ -125,7 +125,6 @@ class ImageGenerathor {
 
         foreach($this->img as $i => $img_for_resize){
             $size_img = getimagesize($img_for_resize);
-            var_dump($size_img);
             $ratio = $size_img[0]/$size_img[1];
             $img_y = (($this->main_size[0]*0.25)*$ratio);
             $pre_dest = imagecreatetruecolor($this->main_size[0]*0.25, $img_y);
@@ -187,8 +186,8 @@ class ImageGenerathor {
 
 $img1 = new ImageGenerathor(
     "Hlavni Napis", 
-    array('Krok 1 je: umyj si ruce Krok 1 je: umyj si ruce', "Krok 2: tady j", "Ukazka", 'Krok 1 je: umyj si ruce', "Ukazka", 'Krok 1 je: umyj si ruce', "Ukazka", 'Krok 1 je: umyj si ruce'), 
     array("placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png"), 
+    array('Krok 1 je: umyj si ruce Krok 1 je: umyj si ruce', "Krok 2: tady j", "Ukazka", 'Krok 1 je: umyj si ruce', "Ukazka", 'Krok 1 je: umyj si ruce', "Ukazka", 'Krok 1 je: umyj si ruce'), 
     15, 
     30, 
     TRUE, 
